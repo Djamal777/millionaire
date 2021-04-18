@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fon_zadniy" />
+
+    <ImageView
+        android:id="@+id/Vedushiy"
+        android:layout_width="231dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="324dp"
+        android:alpha="0.5"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mill" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="1080px"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vedushiy"
+        app:srcCompat="@drawable/knopka_blue" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="1080px"
+        android:layout_height="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/knopka_blue" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="1080px"
+        android:layout_height="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/knopka_blue" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="1080px"
+        android:layout_height="70dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/knopka_blue" />
+
+    <ImageView
+        android:id="@+id/fonVoprosa"
+        android:layout_width="234dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/Vedushiy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summaVoprosa"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/vopros" />
+
+    <ImageView
+        android:id="@+id/fonSummi"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/fonVoprosa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/knopka_osnova" />
+
+    <TextView
+        android:id="@+id/summaVoprosa"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fonSummi"
+        app:layout_constraintEnd_toEndOf="@+id/fonSummi"
+        app:layout_constraintStart_toStartOf="@+id/fonSummi"
+        app:layout_constraintTop_toTopOf="@+id/fonSummi"
+        app:layout_constraintVertical_bias="0.4700000" />
+
+    <TextView
+        android:id="@+id/tekstVoprosa"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="216dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fonVoprosa"
+        app:layout_constraintEnd_toEndOf="@+id/fonVoprosa"
+        app:layout_constraintStart_toStartOf="@+id/fonVoprosa"
+        app:layout_constraintTop_toTopOf="@+id/fonVoprosa" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="124px"
+        android:layout_height="124px"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/Vedushiy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/knopka_pomosh" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="124px"
+        android:layout_height="150px"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/Vedushiy"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:srcCompat="@drawable/knopka_zvonok" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="25dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/fonVoprosa"
+        app:layout_constraintEnd_toStartOf="@+id/summaVoprosa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/vihod" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="124px"
+        android:layout_height="124px"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/Vedushiy"
+        app:srcCompat="@drawable/knopka_50" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/otvett"
+        android:layout_width="130dp"
+        android:layout_height="88dp"
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/Vedushiy"
+        app:layout_constraintEnd_toEndOf="@+id/Vedushiy"
+        app:layout_constraintStart_toStartOf="@+id/Vedushiy"
+        app:layout_constraintTop_toTopOf="@+id/Vedushiy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
